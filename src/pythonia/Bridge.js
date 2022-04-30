@@ -3,7 +3,7 @@ const { JSBridge } = require('./jsi')
 const errors = require('./errors')
 const log = process.env.DEBUG ? console.debug : () => {}
 // const log = console.log
-const REQ_TIMEOUT = 100000
+const REQ_TIMEOUT = 99999999999999
 
 class BridgeException extends Error {
   constructor (...a) {
